@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+summary .summary__contant, summary .summary__div, figure .figure__contant, figure .figure__div, main .main__contant .main__box .main__div_2, main .main__contant, main .main__div, .header__contant .nav_contant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__contant {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header__contant {
+  width: 1510px;
+  height: 100vh;
+  margin: 0 auto;
+  background: url(imges/header_img_1.png);
+}
+.header__contant .nav_contant {
+  padding-top: 42px;
+  justify-content: space-between;
+}
+.header__contant .nav_contant .nav__h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.header__contant .nav_contant .nav__ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__contant .nav_contant .nav__ul .nav__li {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  list-style: none;
+}
+.header__contant .nav_contant .nav_btn {
+  width: 163px;
+  height: 51px;
+  border-radius: 5px;
+  background-color: #C9453B;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.header__contant .header__contant_2 {
+  text-align: left;
+  padding-top: 212px;
+}
+.header__contant .header__contant_2 .header__h1 {
+  font-size: 65px;
+  color: #fff;
+  font-weight: 700;
+  width: 674px;
+}
+.header__contant .header__contant_2 .header__p {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 400;
+  width: 418px;
+  padding-top: 30px;
+}
+.header__contant .header__contant_2 .header__div {
+  padding-top: 40px;
+}
+.header__contant .header__contant_2 .header__div .header__btn {
+  width: 163px;
+  height: 51px;
+  border-radius: 5px;
+  background-color: #C9453B;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+main .main_h1 {
+  font-size: 43px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 140px;
+}
+main .main__div {
+  margin-top: 20px;
+}
+main .main__div .main__p {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 400;
+  width: 735px;
+  line-height: 28px;
+  text-align: center;
+}
+main .main__contant {
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 140px;
+}
+main .main__contant .main__box {
+  width: 360px;
+  height: 465px;
+  box-shadow: 1px 2px 15px grey;
+  border-radius: 7px;
+}
+main .main__contant .main__box .main__img_1 {
+  width: 360px;
+  height: 331px;
+}
+main .main__contant .main__box .main__h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+}
+main .main__contant .main__box .main__div_2 {
+  padding-top: 10px;
+}
+main .main__contant .main__box .main__div_2 .main__p_3 {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 400;
+  width: 306px;
+  text-align: center;
+}
+
+figure .figure__h1 {
+  font-size: 43px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+figure .figure__div {
+  padding-top: 10px;
+}
+figure .figure__div .figure__p {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 400;
+  width: 656px;
+  text-align: center;
+}
+figure .figure__contant {
+  gap: 40px;
+  margin-top: 60px;
+}
+figure .figure__box .figure__h3 {
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  margin-top: 20px;
+}
+figure .figure__box .figure__dis {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 8px;
+}
+figure .figure__box .figure__dis_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+figure .figure__box .figure__dis_icon .figure__icon {
+  color: #FC1200;
+  font-size: 18px;
+}
+figure .figure__box .figure__dis_icon .figure__icon_2 {
+  color: #FFC700;
+  font-size: 20px;
+}
+figure .figure__box .figure__p_3 {
+  font-size: 16px;
+  color: grey;
+  font-weight: 400;
+  margin-top: 8px;
+}
+figure .figure__box .figure__h5 {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  margin-top: 8px;
+}
+figure .figure__box .figure_span {
+  font-size: 16px;
+  color: grey;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+summary .center_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+summary .summary__h1 {
+  font-size: 43px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 140px;
+}
+summary .summary__div {
+  margin-top: 10px;
+}
+summary .summary__div .summary__p {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 400;
+  width: 656px;
+  text-align: center;
+}
+summary .summary__img_1 {
+  width: 554px;
+  height: 397px;
+}
+summary .summary__h1 {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  margin-top: 35px;
+  text-align: left;
+}
+summary .summary__h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: left;
+}
+summary .summary__p {
+  width: 470px;
+  font-size: 18px;
+  color: grey;
+  font-weight: 400;
+  margin-top: 10px;
+}
+summary .summary__contant {
+  gap: 32px;
+  margin-top: 56px;
+}
+summary .summary__small {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin-top: 30px;
+}
+summary .summary_small_p {
+  font-size: 18px;
+  color: grey;
+  font-weight: 400;
+  margin-top: 10px;
+}
+summary .summary__img_2 {
+  width: 236px;
+}
+
+footer .footer__contant {
+  background: #ccc;
+  width: 1515px;
+  height: 348px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 121px;
+}
+footer .footer__h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: 400;
+}
+footer .footer__p {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  padding-top: 40px;
+}
+footer .footer__p_2 {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  padding-top: 10px;
+}
+footer .footer_dis_icon {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding-top: 20px;
+}
+footer .footer__sp {
+  font-size: 20px;
+}
+footer .footer__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer__ul .footer_li {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  list-style: none;
+}
+footer .dis_int_btn {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-top: 42px;
+}
+footer .footer_int {
+  width: 195px;
+  height: 44px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+footer .footer_btn {
+  width: 103px;
+  height: 44px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  border: none;
+  background: #C9453B;
+}/*# sourceMappingURL=style.css.map */

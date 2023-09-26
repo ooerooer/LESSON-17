@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+%center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%bg__position{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin change_wh($w, $h){
+    width: $w;
+    height: $h;
+}
+@mixin change_dis_elements($display, $align, $gap){
+    display: $display;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin chage_font($f_size, $color, $f-weight,){
+    font-size: $f_size;
+    color: $color;
+    font-weight: $f-weight;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header__contant{
+    @include change_wh(1510px, 100vh);
+    margin: 0 auto;
+    background: url(imges/header_img_1.png);
+    @extend %bg__position;
+    .nav_contant{
+        padding-top: 42px;
+        @extend %center;
+        justify-content: space-between;
+        .nav__h2{
+            @include chage_font(24px, #fff, 400)
+        }
+        .nav__ul{
+            @include change_dis_elements(flex,center, 50px );
+            .nav__li{
+                @include chage_font(18px,#fff , 500);
+                list-style: none;
+            }
+        }
+        .nav_btn{
+            @include change_wh(163px,51px);
+            border-radius: 5px;
+            background-color: #C9453B;
+            border: none;
+            @include chage_font(16px,#fff , 400);
+            cursor: pointer;
+        }
+    }
+    .header__contant_2{
+        text-align: left;
+        padding-top: 212px;
+        .header__h1{
+            @include chage-font(65px, #fff, 700);
+            width: 674px;
+        }
+        .header__p{
+            @include chage-font(18px,#b0b0b0, 400);
+            width: 418px;
+            padding-top: 30px;
+        }
+        .header__div{
+            padding-top: 40px;
+            .header__btn{
+                @include change_wh(163px,51px);
+                border-radius: 5px;
+                background-color: #C9453B;
+                border: none;
+                @include chage_font(16px,#fff , 400)
+            }
+        }
+    }
+}
+
+main{
+    .main_h1{
+        @include chage-font(43px, black, 500);
+        text-align: center;
+        margin-top: 140px;
+    }
+    .main__div{
+        @extend %center;
+        margin-top: 20px;
+        .main__p{
+            @include chage-font(18px,#b0b0b0,400);
+            width: 735px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+    .main__contant{
+        @extend %center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 140px;
+        .main__box{
+            @include change-wh(360px,465px);
+            box-shadow: 1px 2px 15px grey;
+            border-radius: 7px;
+            .main__img_1{
+                @include change-wh(360px,331px);
+            }
+            .main__h2{
+                @include chage_font(24px, black, 500);
+                padding-top: 35px;
+                text-align: center;
+            }
+            .main__div_2{
+                @extend %center;
+                padding-top: 10px;
+                .main__p_3{
+                    @include chage-font(18px,#b0b0b0, 400);
+                    width: 306px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+figure{
+    .figure__h1{
+        @include chage_font(43px, black, 500);
+        text-align: center;
+    }
+    .figure__div{
+        @extend %center;
+        padding-top: 10px;
+        .figure__p{
+            @include chage-font(18px,#b0b0b0, 400);
+            width: 656px;
+            text-align: center;
+        }
+    }
+    .figure__contant{
+        @extend %center;
+        gap: 40px;
+        margin-top: 60px;
+    }
+    .figure__box{
+        .figure__h3{
+            @include chage_font(24px, black, 500);
+            margin-top:20px;
+        }
+        .figure__dis{
+            @include change_dis_elements(flex,center,50px);
+            margin-top: 8px;
+        }
+        .figure__dis_icon{
+            @include change_dis_elements(flex,center,10px);
+            .figure__icon{
+                color:#FC1200;
+                font-size: 18px;
+            }
+            .figure__icon_2{
+                color:#FFC700;
+                font-size: 20px;
+            }
+        }
+        .figure__p_3{
+            @include chage_font(16px,grey,400);
+            margin-top: 8px;
+        }
+        .figure__h5{
+            @include chage_font(16px,black,400);
+            margin-top: 8px;
+        }
+        .figure_span{
+            @include chage_font(16px,grey,400);
+            margin-top: 8px;
+        }
+    }
+}
+
+summary{
+    .center_div{
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+    }
+    .summary__h1{
+        @include chage_font(43px, black, 500);
+        text-align: center;
+        margin-top: 140px;
+    }
+    .summary__div{
+        @extend %center;
+        margin-top: 10px;
+        .summary__p{
+            @include chage-font(18px,#b0b0b0, 400);
+            width: 656px;
+            text-align: center;
+        }
+    }
+    .summary__img_1{
+        @include change-wh(554px,397px);
+    }
+    .summary__h1{
+        @include chage_font(20px, black, 500);
+        margin-top: 35px;
+        text-align: left;
+    }
+    .summary__h2{
+        @include chage_font(20px, black, 500);
+        margin-top: 10px;
+        text-align: left;
+    }
+    .summary__p{
+        width: 470px;
+        @include chage_font(18px,grey,400);
+        margin-top: 10px;
+    }
+    .summary__contant{
+        @extend %center;
+        gap: 32px;
+        margin-top: 56px; 
+    }
+    .summary__small{
+        display: flex;
+        align-items: center;
+        gap: 27px;
+        margin-top: 30px
+    }
+    .summary_small_p{
+        @include chage_font(18px,grey,400);
+        margin-top: 10px;
+    }
+    .summary__img_2{
+        width: 236px;
+    }
+}
+footer{
+    .footer__contant{
+        background: #ccc;
+        width: 1515px;
+        height: 348px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 121px;
+    }
+    .footer__h2{
+        @include chage_font(24px,black,400);
+    }
+    .footer__p{
+        @include chage_font(16px,black,400);
+        padding-top: 40px;
+    }
+    .footer__p_2{
+        @include chage_font(16px,black,400);
+        padding-top: 10px;
+    }
+    .footer_dis_icon{
+        display: flex;
+        align-items: center;
+        gap: 27px;
+        padding-top: 20px;
+    }   
+    .footer__sp{
+        font-size: 20px;
+    }
+    .footer__ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .footer_li{
+            @include chage_font(16px,black,600);
+            list-style:none;
+        }
+    }
+    .dis_int_btn{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        padding-top: 42px;
+    }
+    .footer_int{
+        @include change_wh(195px,44px);
+        border:1px solid #ccc;
+        padding: 10px 20px;
+        @include chage_font(16px,black,400);
+    }
+    .footer_btn{
+        @include change_wh(103px,44px);
+        @include chage_font(16px,#fff,400);
+        border: none;
+        background: #C9453B;
+    }
+}
