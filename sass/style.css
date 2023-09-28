@@ -10,30 +10,20 @@ summary .summary__contant, summary .summary__div, figure .figure__contant, figur
   justify-content: center;
 }
 
-.header__contant {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .container {
   width: 1140px;
   margin: 0 auto;
 }
 
-.header__contant {
-  width: 1510px;
-  height: 100vh;
-  margin: 0 auto;
-  background: url(imges/header_img_1.png);
-}
 .header__contant .nav_contant {
   padding-top: 42px;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 .header__contant .nav_contant .nav__h2 {
   font-size: 24px;
-  color: #fff;
+  color: #000;
   font-weight: 400;
 }
 .header__contant .nav_contant .nav__ul {
@@ -43,7 +33,7 @@ summary .summary__contant, summary .summary__div, figure .figure__contant, figur
 }
 .header__contant .nav_contant .nav__ul .nav__li {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   list-style: none;
 }
@@ -64,7 +54,7 @@ summary .summary__contant, summary .summary__div, figure .figure__contant, figur
 }
 .header__contant .header__contant_2 .header__h1 {
   font-size: 65px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   width: 674px;
 }
@@ -340,4 +330,25 @@ footer .footer_btn {
   font-weight: 400;
   border: none;
   background: #C9453B;
+}
+
+@media (max-width: 1200px) and (min-width: 920px) {
+  .nav_contant {
+    gap: 10px;
+  }
+  .nav__ul {
+    gap: 10px;
+  }
+}
+@media (max-width: 920px) and (min-width: 620px) {
+  .nav_contant {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 620px) and (min-width: 310px) {
+  .nav_contant {
+    flex-direction: column;
+    gap: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

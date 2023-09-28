@@ -31,54 +31,54 @@
     width: 1140px;
     margin: 0 auto;
 }
-.header__contant{
-    @include change_wh(1510px, 100vh);
-    margin: 0 auto;
-    background: url(imges/header_img_1.png);
-    @extend %bg__position;
-    .nav_contant{
-        padding-top: 42px;
-        @extend %center;
-        justify-content: space-between;
-        .nav__h2{
-            @include chage_font(24px, #fff, 400)
-        }
-        .nav__ul{
-            @include change_dis_elements(flex,center, 50px );
-            .nav__li{
-                @include chage_font(18px,#fff , 500);
-                list-style: none;
+.header__big{
+    .header__contant{
+        .nav_contant{
+            padding-top: 42px;
+            @extend %center;
+            gap: 30px;
+            justify-content: space-around;
+            margin: 0 auto;
+            .nav__h2{
+                @include chage_font(24px, #000, 400)
             }
-        }
-        .nav_btn{
-            @include change_wh(163px,51px);
-            border-radius: 5px;
-            background-color: #C9453B;
-            border: none;
-            @include chage_font(16px,#fff , 400);
-            cursor: pointer;
-        }
-    }
-    .header__contant_2{
-        text-align: left;
-        padding-top: 212px;
-        .header__h1{
-            @include chage-font(65px, #fff, 700);
-            width: 674px;
-        }
-        .header__p{
-            @include chage-font(18px,#b0b0b0, 400);
-            width: 418px;
-            padding-top: 30px;
-        }
-        .header__div{
-            padding-top: 40px;
-            .header__btn{
+            .nav__ul{
+                @include change_dis_elements(flex,center, 50px );
+                .nav__li{
+                    @include chage_font(18px,#000 , 500);
+                    list-style: none;
+                }
+            }
+            .nav_btn{
                 @include change_wh(163px,51px);
                 border-radius: 5px;
                 background-color: #C9453B;
                 border: none;
-                @include chage_font(16px,#fff , 400)
+                @include chage_font(16px,#fff , 400);
+                cursor: pointer;
+            }
+        }
+        .header__contant_2{
+            text-align: left;
+            padding-top: 212px;
+            .header__h1{
+                @include chage-font(65px, #000, 700);
+                width: 674px;
+            }
+            .header__p{
+                @include chage-font(18px,#b0b0b0, 400);
+                width: 418px;
+                padding-top: 30px;
+            }
+            .header__div{
+                padding-top: 40px;
+                .header__btn{
+                    @include change_wh(163px,51px);
+                    border-radius: 5px;
+                    background-color: #C9453B;
+                    border: none;
+                    @include chage_font(16px,#fff , 400)
+                }
             }
         }
     }
@@ -296,5 +296,35 @@ footer{
         @include chage_font(16px,#fff,400);
         border: none;
         background: #C9453B;
+    }
+}   
+
+@media (max-width:1400px) and (min-width:1200px){
+
+}
+
+@media (max-width:1200px) and (min-width:920px){
+    .nav_contant{
+      gap: 10px;
+    }
+    .nav__ul{
+        gap: 10px;
+    }
+}
+
+@media (max-width:920px) and (min-width:620px){
+    .nav_contant{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:620px) and (min-width:310px){
+    .nav_contant{
+        flex-direction: column;
+        gap: 5px;
     }
 }
